@@ -1,12 +1,17 @@
 package br.com.nilomartins.poo;
 
 public class Matematica {
-    /**
-     *
-     * @param um
-     * @param dois
-     * @return o maior dos dois numeros
-     */
+    /** @return a raiz quadrada segundo a equação de pell*/
+    int raiz(int numero) {
+        int raiz = 0, impar = 1;
+        while (numero >= impar){
+            numero -= impar;
+            impar += 2;//próximo número ímpar
+            ++raiz;
+        }
+        return raiz;
+    }
+
     int maior(int um, int dois) {
         if(um > dois) {
             return um;
