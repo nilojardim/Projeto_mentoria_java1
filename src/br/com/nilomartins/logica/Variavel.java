@@ -1,4 +1,4 @@
-package br.com.nilomartins;
+package br.com.nilomartins.logica;
 
 /**
  * Apresentar os conceitos de variáveis

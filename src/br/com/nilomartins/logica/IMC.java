@@ -1,4 +1,4 @@
-package br.com.nilomartins;
+package br.com.nilomartins.logica;
 
 import javax.swing.JOptionPane;
 
