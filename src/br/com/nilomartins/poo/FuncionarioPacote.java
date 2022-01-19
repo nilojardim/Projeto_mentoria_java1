@@ -5,8 +5,8 @@ public class FuncionarioPacote {
         public static void main(String[] args) {
 
                 Funcionario  f = new Funcionario();
-                f.nome = "Nilo";
-                f.getNome();
+                String nome = f.getNome();
+                f.setNome("Nilo");
 
 
         }

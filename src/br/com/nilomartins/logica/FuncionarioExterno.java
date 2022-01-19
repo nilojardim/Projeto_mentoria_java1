@@ -6,7 +6,6 @@ public class FuncionarioExterno {
     public static void main(String[] args) {
 
         Funcionario  f = new Funcionario();
-        f.nome = "Nilo";
         f.getNome();
 
     }

@@ -2,17 +2,20 @@ package br.com.nilomartins.poo;
 /* Teste dentro da classe Funcionario */
 public class Funcionario {
 
-       public String nome;
+       private String nome;
+       private boolean ativo;
 
-       public String getNome(){
+       public String getNome() {
            return nome;
        }
-
-        public static void main(String[] args) {
-
-            Funcionario f = new Funcionario();
-            f.nome = "Nilo";
-
-        }
+       public void setNome(String n) {
+           this.nome = n;
+       }
+       public boolean isAtivo() {
+           return ativo;
+       }
+       public void setAtivo(boolean ativo) {
+           this.ativo = ativo;
+       }
 
 }
