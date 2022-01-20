@@ -13,7 +13,6 @@ public class Carro {
     public Carro(String modelo, int velocidadeMaxima, double segundosZeroACem) {
         this.modelo = modelo;
         this.velocidadeMaxima = velocidadeMaxima;
-        this.velocidadeMaxima = velocidadeMaxima;
         this.segundosZeroACem = segundosZeroACem;
     }
 
