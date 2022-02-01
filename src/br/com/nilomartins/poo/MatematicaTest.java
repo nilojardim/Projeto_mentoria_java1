@@ -8,6 +8,7 @@ public class MatematicaTest {
 
         System.out.println(m.media (5));
         System.out.println(m.media (5,3));
+        System.out.println(m.media (5, 3, 54, 56));
         System.out.println(m.media ("50", "30"));
     }
 }
