@@ -1,2 +1,5 @@
-package br.com.nilomartins.heranca;public class PitBull {
+package br.com.nilomartins.heranca;
+
+public class PitBull  extends Cachorro {
+
 }

@@ -1,2 +1,6 @@
-package br.com.nilomartins.heranca;public interface VolumeCalculavel {
+package br.com.nilomartins.heranca;
+
+public interface VolumeCalculavel {
+
+    double calculaVolume();
 }

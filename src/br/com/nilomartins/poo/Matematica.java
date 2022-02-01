@@ -1,31 +1,23 @@
 package br.com.nilomartins.poo;
 
 public class Matematica {
-    /** @return a raiz quadrada segundo a equação de pell*/
-    int raiz(int numero) {
-        int raiz = 0, impar = 1;
-        while (numero >= impar){
-            numero -= impar;
-            impar += 2;//próximo número ímpar
-            ++raiz;
-        }
-        return raiz;
+
+    double media(int x) {
+        System.out.print("media(int x) ");
+        return x;
     }
 
-    int maior(int um, int dois) {
-        if(um > dois) {
-            return um;
-        } else {
-            return dois;
-        }
+    double media(int x, int y) {
+        System.out.print("media (int x, int y) ");
+        return (x + y) / 2;
     }
+        double media(String x, String y) {
+            System.out.print("media(String x, String y) ");
+            int ix = Integer.parseInt(x);
+            int iy = Integer.parseInt(y);
+            return (ix + iy) / 2;
+        }
 
-    double soma (double[] numeros) {
-        double total = 0;
-        for (double n : numeros) {
-            total += n;
-        }
-        return total;
-    }
+
 
 }
