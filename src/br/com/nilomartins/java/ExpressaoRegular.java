@@ -1,5 +1,8 @@
 package br.com.nilomartins.java;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class ExpressaoRegular {
 
     public static void main(String[] args) {
@@ -89,9 +92,36 @@ public class ExpressaoRegular {
         b = "crau".matches("cr[ae]u");
 
         b = "rh@xti.com".matches("\\w+@\\w+\\.\\w{2,3}"); //validação de e-mail
+        //System.out.println(b);
+
+        String doce = "Qual é o Doce mais doCe do que doce?";
+        Matcher matcher = Pattern.compile("(?i)doce").matcher(doce);
+        while (matcher.find()) {
+            //System.out.println(matcher.group());
+        }
+
+
+        /* SUBSTITUIÇÕES */
+
+        String r = doce.replaceAll("(?i)doce", "DOCINHO");
+
+        String rato = "O rato roeu a roupa do rei de roma";
+        r = rato.replaceAll("r[aeiou]", "XX");
+
+        r = "Tabular este texto".replaceAll("\\s", "\t");
+
+        String url = "www.xti.com.br/clientes-2011.html";
+                    //http://www.xti.com.br/2011/cliente.jsp//Objetivo
+        String re = "www.xti.com.br/\\w{2,}\\d{4}.html";
+        b = url.matches(re);
         System.out.println(b);
 
-        String doce = "Qual é o Doce mais doCe que o doce?"
+        re = "(www.xti.com.br)/(\\w{2,})-(\\d{4}).html";
+
+        r = url.replaceAll(re,"http://$1/$3/clientes.jsp");
+        System.out.println(r);
+        System.out.println(url);
+
 
     }
 }
