@@ -121,7 +121,7 @@ public class ExpressaoRegular {
         r = url.replaceAll(re,"http://$1/$3/clientes.jsp");
         System.out.println(r);
         System.out.println(url);
-        System.out.println(re);
+
 
 
     }
